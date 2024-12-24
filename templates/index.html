@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to MusicVideo Hub{% endblock %}
+
+{% block content %}
+    <section class="hero">
+        <h1 class="animated-text">Welcome to MusicVideo<span>Hub</span></h1>
+        <p class="subtitle">Your ultimate destination for music and videos</p>
+    </section>
+
+    <section class="featured">
+        <div class="featured-item music-card">
+            <div class="card-content">
+                <h2>Featured Music</h2>
+                <img src="https://s1.zerochan.net/Takara.Miyuki.600.1065252.jpg" alt="Featured Music">
+                <p>Discover our latest and greatest tracks</p>
+                <a href="{% url 'tracks:music_list' %}" class="btn pulse"><i class="fas fa-music"></i> Explore Music</a>
+            </div>
+        </div>
+        <div class="featured-item video-card">
+            <div class="card-content">
+                <h2>Featured Video</h2>
+                <img src="https://preview.redd.it/5u1cyrazhqeb1.jpeg?width=1125&format=pjpg&auto=webp&s=447f65abe4240ef98af3ae41c81663e086002e5c" alt="Featured Video">
+                <p>Watch our top-rated videos</p>
+                <a href="{}" class="btn pulse"><i class="fas fa-video"></i> Explore Videos</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
